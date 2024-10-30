@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Button</title>
+    <script>
+        function redirectToAboutBlank() {
+            // Create a new blank window
+            const newWindow = window.open('about:blank');
+
+            // Write code to the new window
+            newWindow.document.write(`
+                <html>
+                    <head>
+                        <title>about blunk</title>
+                    </head>
+                    <iframe src="https://education76.github.io/g77/1v1-lol-3/" style="outline: none; border: none; width: 100vw; height: 100vh; position: fixed; inset: 0px;"></iframe>
+
+                    </body>
+                </html>
+            `);
+
+            newWindow.document.close(); // Close the document to render it
+        }
+    </script>
+</head>
+<body>
+    <button onclick="redirectToAboutBlank()">1v1.lol fullscreen</button>
+</body>
+</html>
